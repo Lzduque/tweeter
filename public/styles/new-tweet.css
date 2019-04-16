@@ -1,0 +1,28 @@
+section.new-tweet {
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: auto;
+  padding: 2em;
+  width: 85%;
+  background-color: #eee;
+}
+
+section.new-tweet > h2 {
+  border-bottom: 1px solid black;
+  margin-top: 0;
+}
+
+textarea {
+  display: inline-block;
+  width: 320px;
+  min-height: 50px;
+  padding: 5px;
+}
+
+span.counter {
+  float: right;
+}
+
+.negative {
+  color: red;
+}
