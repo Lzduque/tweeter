@@ -7,19 +7,18 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 const data = [];
 
+
 function renderTweets(tweets) {
-  // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
   tweets.forEach(function(tweet) {
     var $tweet = createTweetElement(tweet);
     $(document).ready(function() {
-      $('#tweets-container').append($tweet); // to add it to the page so we can make sure it's got all the right elements, classes, etc.
+      $('#tweets-container').append($tweet);
     });
   });
-};
+}
 
-createTweetElement = function(tweetData) {
+
+function createTweetElement(tweetData) {
 
   const name = tweetData.user.name;
   const avatarSmall = tweetData.user.avatars.small;
@@ -48,7 +47,7 @@ createTweetElement = function(tweetData) {
         </article>`;
 
 return $(newArticle);
-};
+}
 
 renderTweets(data);
 
@@ -72,10 +71,9 @@ const handleSubmit = (event) => {
       console.log('request complete');
     }
   });
+
+  setTimeout(loadTweets, 1);
 };
-
-
-$('.new-tweet form').on('submit', handleSubmit);
 
 
 const loadTweets = function() {
@@ -85,3 +83,7 @@ const loadTweets = function() {
 };
 
 loadTweets();
+
+
+$('.new-tweet form').on('submit', handleSubmit);
+
