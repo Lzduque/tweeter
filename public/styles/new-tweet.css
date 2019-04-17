@@ -12,11 +12,35 @@ section.new-tweet > h2 {
   margin-top: 0;
 }
 
-textarea {
+section.new-tweet form textarea {
   display: inline-block;
   width: 100%;
   min-height: 50px;
   padding: 5px;
+}
+
+section.new-tweet form p.right {
+  display: inline-block;
+  max-width: 75%;
+  margin: 0;
+  background-color: #c51244;
+  color: white;
+  padding: 5px;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  line-height: 60%;
+  visibility: hidden;
+}
+
+section.new-tweet form p.error {
+  display: inline-block;
+  max-width: 75%;
+  margin: 0;
+  background-color: #c51244;
+  color: white;
+  padding: 5px;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  line-height: 60%;
+  visibility: visible;
 }
 
 span.counter {

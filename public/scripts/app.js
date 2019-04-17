@@ -61,12 +61,18 @@ renderTweets(data);
 const handleSubmit = (event) => {
   event.preventDefault();
 
+  if ($('section.new-tweet form p.error')) {
+    $('p.error').empty().toggleClass('error right');
+  }
+
   if ($('section.new-tweet form textarea').val() === "") {
-    return alert('No tweet!');
+    $('p.right').append('No tweet!').toggleClass('right error');
+    return;
   }
 
   if ($('section.new-tweet form textarea').val().length > 140) {
-    return alert('Tweet to long!');
+    $('p.right').append('Tweet to long!').toggleClass('right error');
+    return;
   }
 
   $.ajax({
@@ -96,11 +102,11 @@ $('.new-tweet form').on('submit', handleSubmit);
 const focusOnBox = function() {
   $(document).ready(function() {
 
-    $("#nav-bar button").click(function(){
+    $("#nav-bar button").click(function() {
       $(".new-tweet").slideToggle();
       $("section.new-tweet form textarea").focus();
     });
   });
-}
+};
 
 focusOnBox();
