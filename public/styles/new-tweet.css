@@ -2,7 +2,7 @@ section.new-tweet {
   border: 1px solid gray;
   border-radius: 5px;
   margin: auto;
-  padding: 2em;
+  padding: 1em;
   width: 85%;
   background-color: #eee;
 }
@@ -14,7 +14,7 @@ section.new-tweet > h2 {
 
 textarea {
   display: inline-block;
-  width: 320px;
+  width: 100%;
   min-height: 50px;
   padding: 5px;
 }

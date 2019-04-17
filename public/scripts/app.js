@@ -90,9 +90,29 @@ createTweetElement = function(tweetData) {
             <img src="/images/arrow.png" alt="Retweet Arrow Icon" class="icons">
             <img src="/images/flag.png" alt="Flag Icon" class="icons">
           </footer>
-        </article>`
+        </article>`;
 
 return $(newArticle);
 };
 
 renderTweets(data);
+
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const subreddit = $('section.new-tweet form input').val();
+  console.log(subreddit);
+
+  $.ajax({
+    type: 'POST',
+    url: `http://localhost:8080/tweets/`,
+    data : $('section.new-tweet form textarea').serialize(),
+    complete: function() {
+      console.log('request complete');
+    }
+  });
+
+};
+
+$('.new-tweet form').on('submit', handleSubmit);
