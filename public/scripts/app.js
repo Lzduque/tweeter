@@ -78,8 +78,9 @@ const handleSubmit = (event) => {
 
 const loadTweets = function() {
   $.get('/tweets', function(data) {
-  renderTweets(data);
-});
+    $('section.new-tweet form textarea').val('');
+    renderTweets(data);
+  });
 };
 
 loadTweets();
