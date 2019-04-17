@@ -7,7 +7,7 @@ article.tweet {
   color: #5c7177;
 }
 
-article.tweet-hover {
+article.tweet:hover {
   border: 1px solid gray;
 }
 
@@ -17,7 +17,7 @@ article.tweet header {
   height: 90px;
 }
 
-article.tweet-hover header {
+article.tweet:hover header {
   color: #244751;
 }
 
@@ -31,7 +31,7 @@ article.tweet header img.avatar {
   opacity: 0.7;
 }
 
-article.tweet-hover header img.avatar {
+article.tweet:hover header img.avatar {
   opacity: 1.0
 }
 
@@ -46,7 +46,7 @@ article.tweet header p.login-name {
   color: #bbb;
 }
 
-article.tweet header p.login-name-hover {
+article.tweet:hover header p.login-name {
   color: #aaa;
 }
 
@@ -71,13 +71,13 @@ article.tweet footer p.days-posted {
 }
 
 article.tweet footer img.icons {
-  margin: 1em;
+  margin: 1em 1em 1em 0;
   float: right;
   height: 20px;
   width: auto;
   visibility: hidden;
 }
 
-article.tweet footer img.icons-hover {
+article.tweet:hover footer img.icons {
   visibility: visible;
 }
