@@ -7,12 +7,18 @@
 // Test / driver code (temporary). Eventually will get this from the server.
 const data = [];
 
+function escape(str) {
+  var div = document.createElement('div');
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+}
+
 
 function renderTweets(tweets) {
   tweets.forEach(function(tweet) {
     var $tweet = createTweetElement(tweet);
     $(document).ready(function() {
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
     });
   });
 }
@@ -37,7 +43,7 @@ function createTweetElement(tweetData) {
             <h2>${name}</h2>
             <p class="login-name">${handle}</p>
           </header>
-          <p class="tweet-text">${tweetContent}</p>
+          <p class="tweet-text">${escape(tweetContent)}</p>
           <footer>
             <p class="days-posted">${diffDays} days ago</p>
             <img src="/images/heart.jpg" alt="Heart Icon" class="icons">
@@ -66,24 +72,24 @@ const handleSubmit = (event) => {
   $.ajax({
     type: 'POST',
     url: '/tweets/',
-    data : $('section.new-tweet form textarea').serialize(),
+    data : $('section.new-tweet form textarea').text('section.new-tweet form textarea').serialize(),
     complete: function() {
       console.log('request complete');
     }
   });
-
-  setTimeout(loadTweets, 1);
+  loadTweets();
 };
 
 
 const loadTweets = function() {
   $.get('/tweets', function(data) {
-    $('section.new-tweet form textarea').val('');
+    $('section.new-tweet form textarea').text('section.new-tweet form textarea').val('');
     renderTweets(data);
   });
 };
 
 loadTweets();
+
 
 
 $('.new-tweet form').on('submit', handleSubmit);
