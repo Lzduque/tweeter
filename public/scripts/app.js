@@ -90,7 +90,17 @@ const loadTweets = function() {
 
 loadTweets();
 
-
-
 $('.new-tweet form').on('submit', handleSubmit);
 
+
+const focusOnBox = function() {
+  $(document).ready(function() {
+
+    $("#nav-bar button").click(function(){
+      $(".new-tweet").slideToggle();
+      $("section.new-tweet form textarea").focus();
+    });
+  });
+}
+
+focusOnBox();

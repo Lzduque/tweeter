@@ -53,7 +53,7 @@ article.tweet:hover header p.login-name {
 article.tweet p.tweet-text {
   margin: 1em 1em 1em 1em;
   display: block;
-  width: 100%;
+  width: 90%;
   min-height: 20px;
 }
 
