@@ -28,8 +28,10 @@ This repository is the starter code for the project: Students will fork and clon
 
 !['Screenshot of Create Tweet'](https://github.com/Lzduque/tweeter/blob/master/docs/create-tweet.png?raw=true)
 
+When you click on the Compose Button -->
 !['Screenshot of Click on Compose Button'](https://github.com/Lzduque/tweeter/blob/master/docs/click-on-compose1.png?raw=true)
 
+When you click on the Compose Button Again -->
 !['Screenshot of Click Again on Compose Button'](https://github.com/Lzduque/tweeter/blob/master/docs/click-on-compose2.png?raw=true)
 
 !['Screenshot of Error Tweet Too Long'](https://github.com/Lzduque/tweeter/blob/master/docs/error-too-long.png?raw=true)
