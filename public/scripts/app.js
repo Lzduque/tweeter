@@ -55,7 +55,7 @@ function createTweetElement(tweetData) {
 return $(newArticle);
 }
 
-renderTweets(data);
+// renderTweets(data);
 
 
 const handleSubmit = (event) => {
@@ -81,9 +81,9 @@ const handleSubmit = (event) => {
     data : $('section.new-tweet form textarea').text('section.new-tweet form textarea').serialize(),
     complete: function() {
       console.log('request complete');
+      loadTweets();
     }
   });
-  loadTweets();
 };
 
 
@@ -94,19 +94,14 @@ const loadTweets = function() {
   });
 };
 
-loadTweets();
 
-$('.new-tweet form').on('submit', handleSubmit);
+$(document).ready(function() {
+  loadTweets();
 
+  $('.new-tweet form').on('submit', handleSubmit);
 
-const focusOnBox = function() {
-  $(document).ready(function() {
-
-    $("#nav-bar button").click(function() {
-      $(".new-tweet").slideToggle();
-      $("section.new-tweet form textarea").focus();
-    });
+  $("#nav-bar button").click(function() {
+    $(".new-tweet").slideToggle();
+    $("section.new-tweet form textarea").focus();
   });
-};
-
-focusOnBox();
+})
