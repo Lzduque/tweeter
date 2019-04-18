@@ -39,7 +39,8 @@ function createTweetElement(tweetData) {
           <p class="tweet-text">${escape(tweetContent)}</p>
           <footer>
             <p class="days-posted">${diffDays} days ago</p>
-            <img src="/images/heart.jpg" alt="Heart Icon" class="icons">
+            <span class="counter">0</span>
+            <div id="heart"><img src="/images/heart.jpg" alt="Heart Icon" class="icons"></div>
             <img src="/images/arrow.png" alt="Retweet Arrow Icon" class="icons">
             <img src="/images/flag.png" alt="Flag Icon" class="icons">
           </footer>

@@ -71,7 +71,7 @@ article.tweet footer p.days-posted {
 }
 
 article.tweet footer img.icons {
-  margin: 1em 1em 1em 0;
+  margin: 1em 7px 1em 0;
   float: right;
   height: 20px;
   width: auto;
@@ -79,5 +79,17 @@ article.tweet footer img.icons {
 }
 
 article.tweet:hover footer img.icons {
+  visibility: visible;
+}
+
+article.tweet footer span.counter {
+  margin: 1em 1em 1em 0;
+  float: right;
+  height: 20px;
+  width: auto;
+  visibility: hidden;
+}
+
+article.tweet:hover footer span.counter {
   visibility: visible;
 }
