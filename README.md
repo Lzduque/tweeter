@@ -22,4 +22,16 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!['Screenshot of Login Page'](https://github.com/Lzduque/tiny-app/blob/master/docs/login.png?raw=true)
+!['Screenshot of Main Page']()
+
+!['Screenshot of Typing Tweet']()
+
+!['Screenshot of Create Tweet']()
+
+!['Screenshot of Click on Compose Button']()
+
+!['Screenshot of Click Again on Compose Button']()
+
+!['Screenshot of Error Tweet Too Long']()
+
+!['Screenshot of Error No Tweet']()
