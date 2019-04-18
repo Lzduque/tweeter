@@ -22,16 +22,16 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshots
 
-!['Screenshot of Main Page']()
+!['Screenshot of Main Page'](https://github.com/Lzduque/tweeter/blob/master/docs/main-page.png?raw=true)
 
-!['Screenshot of Typing Tweet']()
+!['Screenshot of Typing Tweet'](https://github.com/Lzduque/tweeter/blob/master/docs/type-tweet.png?raw=true)
 
-!['Screenshot of Create Tweet']()
+!['Screenshot of Create Tweet'](https://github.com/Lzduque/tweeter/blob/master/docs/create-tweet.png?raw=true)
 
-!['Screenshot of Click on Compose Button']()
+!['Screenshot of Click on Compose Button'](https://github.com/Lzduque/tweeter/blob/master/docs/click-on-compose1.png?raw=true)
 
-!['Screenshot of Click Again on Compose Button']()
+!['Screenshot of Click Again on Compose Button'](https://github.com/Lzduque/tweeter/blob/master/docs/click-on-compose2.png?raw=true)
 
-!['Screenshot of Error Tweet Too Long']()
+!['Screenshot of Error Tweet Too Long'](https://github.com/Lzduque/tweeter/blob/master/docs/error-too-long.png?raw=true)
 
-!['Screenshot of Error No Tweet']()
+!['Screenshot of Error No Character in Tweet'](https://github.com/Lzduque/tweeter/blob/master/docs/error-no-tweet.png?raw=true)
