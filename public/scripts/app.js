@@ -1,10 +1,5 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+"use strict";
 
-// Test / driver code (temporary). Eventually will get this from the server.
 const data = [];
 
 function escape(str) {
@@ -28,8 +23,6 @@ function createTweetElement(tweetData) {
 
   const name = tweetData.user.name;
   const avatarSmall = tweetData.user.avatars.small;
-  const avatarReg = tweetData.user.avatars.regular;
-  const avatarLarge = tweetData.user.avatars.large;
   const handle = tweetData.user.handle;
   const tweetContent = tweetData.content.text;
   const createdAt = tweetData.created_at;
@@ -55,8 +48,6 @@ function createTweetElement(tweetData) {
 return $(newArticle);
 }
 
-// renderTweets(data);
-
 
 const handleSubmit = (event) => {
   event.preventDefault();
@@ -71,7 +62,7 @@ const handleSubmit = (event) => {
   }
 
   if ($('section.new-tweet form textarea').val().length > 140) {
-    $('p.right').append('Tweet to long!').toggleClass('right error');
+    $('p.right').append('Tweet too long!').toggleClass('right error');
     return;
   }
 
@@ -96,6 +87,7 @@ const loadTweets = function() {
 
 
 $(document).ready(function() {
+
   loadTweets();
 
   $('.new-tweet form').on('submit', handleSubmit);
@@ -104,4 +96,4 @@ $(document).ready(function() {
     $(".new-tweet").slideToggle();
     $("section.new-tweet form textarea").focus();
   });
-})
+});

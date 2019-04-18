@@ -15,3 +15,11 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+- Body-parser
+- Chance
+- Md5
+- MongoDB
+
+## Screenshots
+
+!['Screenshot of Login Page'](https://github.com/Lzduque/tiny-app/blob/master/docs/login.png?raw=true)
