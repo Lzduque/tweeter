@@ -10,9 +10,10 @@
       "handle": "@SirIsaac"
     },
     "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
+      "text": "If I have seen further it is by standing on the shoulders of giants
     },
-    "created_at": 1461116232227
+    "created_at": 1461116232227",
+      "likes": 0
   },
   {
     "user": {
@@ -24,7 +25,8 @@
       },
       "handle": "@rd" },
     "content": {
-      "text": "Je pense , donc je suis"
+      "text": "Je pense , donc je suis",
+      "likes": 5
     },
     "created_at": 1461113959088
   },
@@ -39,7 +41,8 @@
       "handle": "@johann49"
     },
     "content": {
-      "text": "Es ist nichts schrecklicher als eine tätige Unwissenheit."
+      "text": "Es ist nichts schrecklicher als eine tätige Unwissenheit.",
+      "likes": 10
     },
     "created_at": 1461113796368
   }

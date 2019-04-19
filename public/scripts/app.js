@@ -25,6 +25,8 @@ function createTweetElement(tweetData) {
   const avatarSmall = tweetData.user.avatars.small;
   const handle = tweetData.user.handle;
   const tweetContent = tweetData.content.text;
+  const numLikes = tweetData.likes;
+  console.log('tweetData.likes',tweetData.likes);
   const createdAt = tweetData.created_at;
   const now = new Date();
   const diffTime = Math.abs(createdAt - now.getTime());
@@ -39,8 +41,8 @@ function createTweetElement(tweetData) {
           <p class="tweet-text">${escape(tweetContent)}</p>
           <footer>
             <p class="days-posted">${diffDays} days ago</p>
-            <span class="counter">0</span>
-            <div id="heart"><img src="/images/heart.jpg" alt="Heart Icon" class="icons"></div>
+            <span class="counter">${numLikes}</span>
+            <div class="heart"><img src="/images/heart.jpg" alt="Heart Icon" class="icons"></div>
             <img src="/images/arrow.png" alt="Retweet Arrow Icon" class="icons">
             <img src="/images/flag.png" alt="Flag Icon" class="icons">
           </footer>
