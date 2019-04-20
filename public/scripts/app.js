@@ -2,6 +2,8 @@
 
 const data = [];
 
+//////////////////////////FUNCTIONS//////////////////////////
+
 function escape(str) {
   var div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
@@ -10,13 +12,12 @@ function escape(str) {
 
 
 function renderTweets(tweets) {
+  $('#tweets-container').empty();
   tweets.forEach(function(tweet) {
     var $tweet = createTweetElement(tweet);
-    $(document).ready(function() {
-      $('#tweets-container').prepend($tweet);
-    });
+    $('#tweets-container').prepend($tweet);
   });
-}
+};
 
 
 function createTweetElement(tweetData) {
@@ -85,8 +86,12 @@ const loadTweets = function() {
   $.get('/tweets', function(data) {
     $('section.new-tweet form textarea').text('section.new-tweet form textarea').val('');
     renderTweets(data);
+    console.log('data', data);
   });
 };
+
+
+//////////////////////////FUNCTIONS//////////////////////////
 
 
 $(document).ready(function() {
