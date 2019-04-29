@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,17 +13,19 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   margin: 0;
   color: #244751;
   background-color: #eee;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   width: 100%;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
 main.container {
   width: 450px;
   min-height: 500px;
@@ -32,5 +33,3 @@ main.container {
   margin: 0 auto;
   margin-top: 80px;
 }
-
-/*# sourceMappingURL=layout.css.map */

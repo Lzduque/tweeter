@@ -32,7 +32,7 @@ article.tweet header img.avatar {
 }
 
 article.tweet:hover header img.avatar {
-  opacity: 1;
+  opacity: 1.0
 }
 
 article.tweet header h2 {
@@ -93,5 +93,3 @@ article.tweet footer span.counter {
 article.tweet:hover footer span.counter {
   visibility: visible;
 }
-
-/*# sourceMappingURL=tweet.css.map */
