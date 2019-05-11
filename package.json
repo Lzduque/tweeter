@@ -13,10 +13,12 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "chance": "^1.0.2",
+    "dotenv": "^8.0.0",
     "express": "^4.13.4",
     "heroku": "^7.22.10",
     "md5": "^2.1.0",
-    "mongodb": "^2.2.36"
+    "mongodb": "^2.2.36",
+    "mongodb-stitch-browser-sdk": "^4.3.2"
   },
   "devDependencies": {
     "nodemon": "^1.9.2"
